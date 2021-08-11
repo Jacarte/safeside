@@ -23,7 +23,7 @@ else
   ASLR_FLAGS=
 fi
 
-../../lucet-spectre/target/release/lucet-wasi \
+../../lucet-spectre-repro/target/release/lucet-wasi \
     --heap-address-space "8GiB" \
     --max-heap-size "4GiB" \
     --stack-size "128MiB" \
