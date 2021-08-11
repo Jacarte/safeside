@@ -7,10 +7,10 @@ project(safeside-wasm
         VERSION 0.1
         DESCRIPTION "Safeside compiled with lucet")
 
-set(safeside_SOURCE_DIR $ENV{HOME}/safeside)
-set(LUCET_WASI_DIR $ENV{HOME}/spectresandboxing/lucet-spectre/lucet-wasi)
-set(LUCET_DIR $ENV{HOME}/spectresandboxing/lucet-spectre)
-set(WASI_SDK_DIR $ENV{HOME}/wasi-sdk/build/install/opt/wasi-sdk)
+set(safeside_SOURCE_DIR ${CMAKE_SOURCE_DIR}/..)
+set(LUCET_WASI_DIR ${CMAKE_SOURCE_DIR}/../../lucet-spectre/lucet-wasi)
+set(LUCET_DIR ${CMAKE_SOURCE_DIR}/../../lucet-spectre)
+set(WASI_SDK_DIR ${CMAKE_SOURCE_DIR}/../../wasi-sdk/build/install/opt/wasi-sdk)
 set(WASI_SYSROOT_DIR ${WASI_SDK_DIR}/share/wasi-sysroot)
 set(WASICLANG ${WASI_SDK_DIR}/bin/clang)
 set(WASICLANG++ ${WASI_SDK_DIR}/bin/clang++)
